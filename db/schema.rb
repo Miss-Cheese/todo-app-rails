@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2023_06_14_211447) do
     t.string "title", limit: 30
     t.string "body", limit: 120
     t.string "tag"
-    t.string "status"
+    t.string "status", default: 'CREATED'
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

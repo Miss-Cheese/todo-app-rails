@@ -15,4 +15,14 @@ class TasksController < ApplicationController
 
   def delete
   end
+
+  def mark_in_progress(task_id)
+    task = Task.find(task_id)
+    task.status = 'IN_PROGRESS'
+  end
+
+  def mark_complete(task_id)
+    task = Task.find(task_id)
+    task.status = 'DONE'
+  end
 end
