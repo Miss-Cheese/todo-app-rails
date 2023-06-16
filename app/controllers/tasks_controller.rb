@@ -8,7 +8,6 @@ class TasksController < ApplicationController
   end
 
   def show
-    byebug
   end
 
   def update
